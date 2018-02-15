@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains islandora_metadata_test.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function islandora_metadata_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the islandora_pdf module.
+    case 'help.page.islandora_metadata_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Islandora metadata_test') . '</p>';
+      return $output;
+
+    default:
+  }
+}

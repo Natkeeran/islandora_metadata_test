@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dc_metadata
+  enforced:
+    module:
+      - islandora_metadata_test
+  module:
+    - node
+id: node.dc_metadata
+targetEntityType: node
+bundle: dc_metadata
+types:
+  - 'schema:Intangible'
+fieldMappings:
+  title:
+    properties:
+      - 'dcterms:alternative'
+  field_author:
+    properties:
+      - 'dcterms:creator'
+  field_date_created:
+    properties:
+      - 'dcterms:created'

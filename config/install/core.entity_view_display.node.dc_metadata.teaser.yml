@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dc_metadata.field_author
+    - node.type.dc_metadata
+  module:
+    - user
+id: node.dc_metadata.teaser
+targetEntityType: node
+bundle: dc_metadata
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_author: true

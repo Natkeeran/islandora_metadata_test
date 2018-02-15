@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dc_metadata
+id: node.dc_metadata.title
+field_name: title
+entity_type: node
+bundle: dc_metadata
+label: 'Alternative Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
